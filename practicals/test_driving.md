@@ -159,6 +159,8 @@ ArgumentError:
 So next:
 
 ```ruby
+# remembering_names_spec.rb
+
 def add_name(name)
 end
 ```
