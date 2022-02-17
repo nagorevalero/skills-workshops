@@ -194,8 +194,3 @@ Write out definitions for the following terms, and check them with a coach:
 Click an emoji to tell us.
 
 <!-- END GENERATED SECTION DO NOT EDIT -->
-
-Also, you write good, where should I put the "quickly and easily" in this sentence?
-a) This can help you to quickly and easily
-it can help you to:
-a) Clarify the problem in your own mind
