@@ -80,7 +80,7 @@ These are called instances of the class, and they know their class:
 bank_account1.class  #=> BankAccount
 ```
 
-But so far our bank accounts don't do very much. Instances of a class are objects.
+But so far our bank accounts don't do very much. **Instances of a class are objects.**
 What makes an object? State + behaviour.
 
 Let's see how we can give instances of a class state and behaviour.
@@ -131,6 +131,7 @@ Notice that the instance variable `@balance` is available in every method.
 For each of the exercises the aim is to write some code so that the tests pass.
 
 You can run the tests by:
+
 ```shell
 > bundle install
 > cd exercise1
@@ -151,16 +152,38 @@ The first exercise has tests that describe a car:
 - As a garage owner I want to see all the cars of a particular make
 
 It should:
-* Have one class:
-  * `Garage`
-    * Has one instance variable:
+
+- Have one class:
+  - `Garage`
+    - Has one instance variable:
       `cars`. This is a list of cars. Each car has a `registration_plate` and `make`.
-    * Has 5 methods:
-      * `initialize` This is provided for you.
-      * `add`. Takes a hash representing a car as a parameter and appends it to the list of cars.
-      * `find`. Takes a number plate as a parameter and returns a car with a matching registration plate.
-      * `remove`. Takes a number plate as a parameter and deletes the car from the list of cars.
-      * `all_of_make`. Takes a make as a parameter and returns a list of all the cars of that make.
+    - Has 5 methods:
+      - `initialize` This is provided for you.
+      - `add`. Takes a hash representing a car as a parameter and appends it to the list of cars.
+      - `find`. Takes a number plate as a parameter and returns a car with a matching registration plate.
+      - `remove`. Takes a number plate as a parameter and deletes the car from the list of cars.
+      - `all_of_make`. Takes a make as a parameter and returns a list of all the cars of that make.
+
+## Bonus - Stretch Material
+
+All objects have a built in method `.methods` , which can be used to see the available methods on that object.
+
+- Use this in irb to inspect an instance of your `Garage` class. There should be a lot of methods built in!
+- Pick one or two of these methods and look up what they do. Don't worry if you don't understand all of them, some of them can get quite complex. `:nil?` and `:instance_of?` are good ones to start with.
+
+In Ruby, _everything_ is an object, even numbers and strings!
+
+- Use `.class` on a string or number
+- Use `.methods` on a string or number to see the methods available to it.
+- Some of these methods are defined with punctuation, eg. `:+`. How are these used?
+
+Write out definitions for the following terms, and check them with a coach:
+
+- Object
+- Class
+- Instance
+- State
+- Method
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
