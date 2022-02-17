@@ -2,16 +2,16 @@
 
 ## Learning objectives
 
-- Understand classes and objects
-- Create a class with state and behaviour in Ruby
+* Understand classes and objects
+* Create a class with state and behaviour in Ruby
 
 ## Introduction
 
 Imagine we had these user stories for a bank account:
 
-- As a customer I would like to deposit money in my account
-- As a customer I would like to withdraw money from my bank account
-- As a customer I would like to view my balance
+* As a customer I would like to deposit money in my account
+* As a customer I would like to withdraw money from my bank account
+* As a customer I would like to view my balance
 
 Here's a way we could represent a bank account. With an integer for the balance
 and methods to deposit and withdraw money.
@@ -140,54 +140,54 @@ You can run the tests by:
 
 The first exercise has tests that describe a car:
 
-- As a car driver I want to know the car's speed
-- As a car driver I want to accelerate
-- As a car driver I want to brake
+* As a car driver I want to know the car's speed
+* As a car driver I want to accelerate
+* As a car driver I want to brake
 
 ## Exercise Two
 
-- As a garage owner I want to add a car to the garage
-- As a garage owner I want to find a car by its registration plate
-- As a garage owner I want to remove a car from the garage
-- As a garage owner I want to see all the cars of a particular make
+* As a garage owner I want to add a car to the garage
+* As a garage owner I want to find a car by its registration plate
+* As a garage owner I want to remove a car from the garage
+* As a garage owner I want to see all the cars of a particular make
 
 It should:
 
-- Have one class:
-  - `Garage`
-    - Has one instance variable:
+* Have one class:
+  * `Garage`
+    * Has one instance variable:
       `cars`. This is a list of cars. Each car has a `registration_plate` and `make`.
-    - Has 5 methods:
-      - `initialize` This is provided for you.
-      - `add`. Takes a hash representing a car as a parameter and appends it to the list of cars.
-      - `find`. Takes a number plate as a parameter and returns a car with a matching registration plate.
-      - `remove`. Takes a number plate as a parameter and deletes the car from the list of cars.
-      - `all_of_make`. Takes a make as a parameter and returns a list of all the cars of that make.
+    * Has 5 methods:
+      * `initialize` This is provided for you.
+      * `add`. Takes a hash representing a car as a parameter and appends it to the list of cars.
+      * `find`. Takes a number plate as a parameter and returns a car with a matching registration plate.
+      * `remove`. Takes a number plate as a parameter and deletes the car from the list of cars.
+      * `all_of_make`. Takes a make as a parameter and returns a list of all the cars of that make.
 
 ## Bonus - Stretch Material
 
 All objects have a built in method `.methods` , which can be used to see the available methods on that object.
 
-- Use this in irb to inspect an instance of your `Garage` class. There should be a lot of methods listed that you didn't write!
-- Pick one or two of these built-in methods and look up what they do. Try them out in irb. Don't worry if you don't understand all of them, some of them can get quite complex. `:nil?` and `:instance_of?` are good ones to start with.
+* Use this in irb to inspect an instance of your `Garage` class. There should be a lot of methods listed that you didn't write!
+* Pick one or two of these built-in methods and look up what they do. Try them out in irb. Don't worry if you don't understand all of them, some of them can get quite complex. `:nil?` and `:instance_of?` are good ones to start with.
 
 In Ruby, _everything_ is an object, even numbers and strings!
 
-- Use `.class` on a string or number. Does it make a difference if the number is a whole number?
-- Use `.methods` on a string or number to see the methods available to it.
-- Some of these methods are defined with punctuation, e.g. `:+`. How do you think these are used? Could you write a class that uses methods like this?
+* Use `.class` on a string or number. Does it make a difference if the number is a whole number?
+* Use `.methods` on a string or number to see the methods available to it.
+* Some of these methods are defined with punctuation, e.g. `:+`. How do you think these are used? Could you write a class that uses methods like this?
 
 Write out definitions for the following terms, and check them with a coach:
 
-- Object
-- Class
-- Instance
-- State
-- Method
+* Object
+* Class
+* Instance
+* State
+* Method
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
----
+*--
 
 **How was this resource?**  
 [😫](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=skills-workshops&prefill_File=ruby-fundamentals/class-syntax/README.md&prefill_Sentiment=😫) [😕](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=skills-workshops&prefill_File=ruby-fundamentals/class-syntax/README.md&prefill_Sentiment=😕) [😐](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=skills-workshops&prefill_File=ruby-fundamentals/class-syntax/README.md&prefill_Sentiment=😐) [🙂](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=skills-workshops&prefill_File=ruby-fundamentals/class-syntax/README.md&prefill_Sentiment=🙂) [😀](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=skills-workshops&prefill_File=ruby-fundamentals/class-syntax/README.md&prefill_Sentiment=😀)  
