@@ -138,11 +138,11 @@ You can run the tests by:
 > rspec
 ```
 
-The first exercise has tests that describe a car:
+The first exercise has tests that describe a thermostat:
 
-- As a car driver I want to know the car's speed
-- As a car driver I want to accelerate
-- As a car driver I want to brake
+- As an office worker I want to know what the thermostat is currently set to
+- As an office worker who is too cold I want to increase the target temperature
+- As an office worker who is too hot I want to reduce the target temperature
 
 ## Exercise Two
 
@@ -163,6 +163,18 @@ It should:
       - `find`. Takes a number plate as a parameter and returns a car with a matching registration plate.
       - `remove`. Takes a number plate as a parameter and deletes the car from the list of cars.
       - `all_of_make`. Takes a make as a parameter and returns a list of all the cars of that make.
+
+`cd` into the `exercise2` folder and run `irb`. Load your Garage class with:
+
+```ruby
+require 'garage'
+```
+
+You can now interact with your code directly:
+
+- Create some instances of your garage class with `garage_1 = Garage.new` etc.
+- Add some cars to the garages.
+- Try out all of your methods!
 
 ## Bonus - Stretch Material
 
