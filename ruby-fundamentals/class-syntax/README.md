@@ -80,7 +80,7 @@ These are called instances of the class, and they know their class:
 bank_account1.class  #=> BankAccount
 ```
 
-But so far our bank accounts don't do very much. Instances of a class are objects.
+But so far our bank accounts don't do very much. **Instances of a class are objects.**
 What makes an object? State + behaviour.
 
 Let's see how we can give instances of a class state and behaviour.
@@ -131,17 +131,18 @@ Notice that the instance variable `@balance` is available in every method.
 For each of the exercises the aim is to write some code so that the tests pass.
 
 You can run the tests by:
+
 ```shell
 > bundle install
 > cd exercise1
 > rspec
 ```
 
-The first exercise has tests that describe a car:
+The first exercise has tests that describe a thermostat:
 
-- As a car driver I want to know the car's speed
-- As a car driver I want to accelerate
-- As a car driver I want to brake
+- As an office worker I want to know what the thermostat is currently set to
+- As an office worker who is too cold I want to increase the target temperature
+- As an office worker who is too hot I want to reduce the target temperature
 
 ## Exercise Two
 
@@ -151,16 +152,50 @@ The first exercise has tests that describe a car:
 - As a garage owner I want to see all the cars of a particular make
 
 It should:
-* Have one class:
-  * `Garage`
-    * Has one instance variable:
+
+- Have one class:
+  - `Garage`
+    - Has one instance variable:
       `cars`. This is a list of cars. Each car has a `registration_plate` and `make`.
-    * Has 5 methods:
-      * `initialize` This is provided for you.
-      * `add`. Takes a hash representing a car as a parameter and appends it to the list of cars.
-      * `find`. Takes a number plate as a parameter and returns a car with a matching registration plate.
-      * `remove`. Takes a number plate as a parameter and deletes the car from the list of cars.
-      * `all_of_make`. Takes a make as a parameter and returns a list of all the cars of that make.
+    - Has 5 methods:
+      - `initialize` This is provided for you.
+      - `add`. Takes a hash representing a car as a parameter and appends it to the list of cars.
+      - `find`. Takes a number plate as a parameter and returns a car with a matching registration plate.
+      - `remove`. Takes a number plate as a parameter and deletes the car from the list of cars.
+      - `all_of_make`. Takes a make as a parameter and returns a list of all the cars of that make.
+
+`cd` into the `exercise2` folder and run `irb`. Load your Garage class with:
+
+```ruby
+require 'garage'
+```
+
+You can now interact with your code directly:
+
+- Create some instances of your garage class with `garage_1 = Garage.new` etc.
+- Add some cars to the garages.
+- Try out all of your methods!
+
+## Bonus - Stretch Material
+
+All objects have a built in method `.methods` , which can be used to see the available methods on that object.
+
+- Use this in irb to inspect an instance of your `Garage` class. There should be a lot of methods listed that you didn't write!
+- Pick one or two of these built-in methods and look up what they do. Try them out in irb. Don't worry if you don't understand all of them, some of them can get quite complex. `:nil?` and `:instance_of?` are good ones to start with.
+
+In Ruby, _everything_ is an object, even numbers and strings!
+
+- Use `.class` on a string or number. Does it make a difference if the number is a whole number?
+- Use `.methods` on a string or number to see the methods available to it.
+- Some of these methods are defined with punctuation, e.g. `:+`. How do you think these are used? Could you write a class that uses methods like this?
+
+Write out definitions for the following terms, and check them with a coach:
+
+- Object
+- Class
+- Instance
+- State
+- Method
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
