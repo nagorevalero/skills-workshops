@@ -168,14 +168,14 @@ It should:
 
 All objects have a built in method `.methods` , which can be used to see the available methods on that object.
 
-- Use this in irb to inspect an instance of your `Garage` class. There should be a lot of methods built in!
-- Pick one or two of these methods and look up what they do. Don't worry if you don't understand all of them, some of them can get quite complex. `:nil?` and `:instance_of?` are good ones to start with.
+- Use this in irb to inspect an instance of your `Garage` class. There should be a lot of methods listed that you didn't write!
+- Pick one or two of these built-in methods and look up what they do. Try them out in irb. Don't worry if you don't understand all of them, some of them can get quite complex. `:nil?` and `:instance_of?` are good ones to start with.
 
 In Ruby, _everything_ is an object, even numbers and strings!
 
-- Use `.class` on a string or number
+- Use `.class` on a string or number. Does it make a difference if the number is a whole number?
 - Use `.methods` on a string or number to see the methods available to it.
-- Some of these methods are defined with punctuation, eg. `:+`. How are these used?
+- Some of these methods are defined with punctuation, e.g. `:+`. How do you think these are used? Could you write a class that uses methods like this?
 
 Write out definitions for the following terms, and check them with a coach:
 
@@ -194,3 +194,8 @@ Write out definitions for the following terms, and check them with a coach:
 Click an emoji to tell us.
 
 <!-- END GENERATED SECTION DO NOT EDIT -->
+
+Also, you write good, where should I put the "quickly and easily" in this sentence?
+a) This can help you to quickly and easily
+it can help you to:
+a) Clarify the problem in your own mind
